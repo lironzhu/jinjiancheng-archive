@@ -25,7 +25,9 @@
    "date": "2026-10-16",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "助农"
+   ],
    "md": "公众号文章/金渐成/贵人不可贱用-2026-10-16-助农.md",
    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1792295156&ver=7033&signature=xjUsuivFPsfprClX*ibgJdDsCLg15-mNa5v7C6JmsWB6oBFQ4VfeP8dc-5zaNHE0yViyiG*CZTVk1nwuEDlby851hzlm-ABOMlGMSLQtuoju6Q3hyi0ThqnBU4W6ObUr&new=1",
    "source": "wechat-sogou"
@@ -35,8 +37,16 @@
    "title": "永远不要买垃圾",
    "date": "2026-10-13",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks",
+    "hk-stocks",
+    "gold"
+   ],
+   "keywords": [
+    "美股",
+    "港股",
+    "黄金"
+   ],
    "md": "公众号文章/金渐成/永远不要买垃圾-2026-10-13-美股-港股-黄金.md",
    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1792299522&ver=7033&signature=xjUsuivFPsfprClX*ibgJdDsCLg15-mNa5v7C6JmsWCT88T3ZVChQi-7OJs1FuLZgOlI3ZG5-w6*1K1UpSKz710D4-WIGuRzsOViZd2nE8v9CHoiBlSrd0Ym0Fx7GPPC&new=1",
    "source": "wechat-sogou"
@@ -47,7 +57,11 @@
    "date": "2026-10-08",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "纳指",
+    "标普",
+    "微软"
+   ],
    "md": "公众号文章/金渐成/没有风雨躲得过-2026-10-08-纳指-标普-微软.md",
    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1792299528&ver=7033&signature=xjUsuivFPsfprClX*ibgJdDsCLg15-mNa5v7C6JmsWBA2KIuEuAvEdd1iflIMDHFZZIxqH8Cf1tC8nLty0KhyHEdwUhr78HyZXmUSEeqtAT887ATjhM3LgeYF*de6Ig*&new=1",
    "source": "wechat-sogou"
@@ -58,7 +72,9 @@
    "date": "2026-10-05",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "资产配置"
+   ],
    "md": "公众号文章/金渐成/肥而不溺-2026-10-05-资产配置.md",
    "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1792299534&ver=7033&signature=xjUsuivFPsfprClX*ibgJdDsCLg15-mNa5v7C6JmsWCZKdzOzNkzxR0ONv2gU5NaX69VxG8ldMa*E7SyqHEgteFPpw9VzSVu*AueDYTaJgoer6Cz8GitY8XCtk3QaZfb&new=1",
    "source": "wechat-sogou"
@@ -68,8 +84,13 @@
    "title": "不告而别",
    "date": "2026-09-29",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "AI",
+    "美股"
+   ],
    "md": "公众号文章/金渐成/不告而别-2026-09-29-AI-美股.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-29%5D%E4%B8%8D%E5%91%8A%E8%80%8C%E5%88%AB~.md",
    "source": "wechat-mirror"
@@ -79,8 +100,13 @@
    "title": "抄底亏惨了…",
    "date": "2026-09-28",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "资产配置",
+    "美股"
+   ],
    "md": "公众号文章/金渐成/抄底亏惨了…-2026-09-28-资产配置-美股.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-28%5D%E6%8A%84%E5%BA%95%E4%BA%8F%E6%83%A8%E4%BA%86%E2%80%A6.md",
    "source": "wechat-mirror"
@@ -90,8 +116,14 @@
    "title": "现金流崩了",
    "date": "2026-09-23",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "纳指",
+    "标普"
+   ],
    "md": "公众号文章/金渐成/现金流崩了-2026-09-23-美股-纳指-标普.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-23%5D%E7%8E%B0%E9%87%91%E6%B5%81%E5%B4%A9%E4%BA%86~.md",
    "source": "wechat-mirror"
@@ -101,8 +133,14 @@
    "title": "埋下一枚坐标",
    "date": "2026-09-21",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate",
+    "us-stocks"
+   ],
+   "keywords": [
+    "房地产",
+    "美股"
+   ],
    "md": "公众号文章/金渐成/埋下一枚坐标-2026-09-21-房地产-美股.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-21%5D%E5%9F%8B%E4%B8%8B%E4%B8%80%E6%9E%9A%E5%9D%90%E6%A0%87~.md",
    "source": "wechat-mirror"
@@ -113,7 +151,9 @@
    "date": "2026-09-18",
    "column": "天机奇谈",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "银行"
+   ],
    "md": "公众号文章/天机奇谈/价格回到十年前-2026-09-18-银行.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E5%A4%A9%E6%9C%BA%E5%A5%87%E8%B0%88/%5B2026-09-18%5D%E4%BB%B7%E6%A0%BC%E5%9B%9E%E5%88%B0%E5%8D%81%E5%B9%B4%E5%89%8D~.md",
    "source": "wechat-mirror"
@@ -124,7 +164,11 @@
    "date": "2026-09-17",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "美联储",
+    "加息",
+    "降息"
+   ],
    "md": "公众号文章/金渐成/等下一个春天-2026-09-17-美联储-加息-降息.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-17%5D%E7%AD%89%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%98%A5%E5%A4%A9~.md",
    "source": "wechat-mirror"
@@ -134,8 +178,14 @@
    "title": "不期而遇",
    "date": "2026-09-16",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "AI",
+    "谷歌"
+   ],
    "md": "公众号文章/金渐成/不期而遇-2026-09-16-美股-AI-谷歌.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-16%5D%E4%B8%8D%E6%9C%9F%E8%80%8C%E9%81%87~.md",
    "source": "wechat-mirror"
@@ -145,8 +195,14 @@
    "title": "永远给自己留一手牌",
    "date": "2026-09-14",
    "column": "天机奇谈",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate"
+   ],
+   "keywords": [
+    "房地产",
+    "银行",
+    "资产配置"
+   ],
    "md": "公众号文章/天机奇谈/永远给自己留一手牌-2026-09-14-房地产-银行-资产配置.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E5%A4%A9%E6%9C%BA%E5%A5%87%E8%B0%88/%5B2026-09-14%5D%E6%B0%B8%E8%BF%9C%E7%BB%99%E8%87%AA%E5%B7%B1%E7%95%99%E4%B8%80%E6%89%8B%E7%89%8C~.md",
    "source": "wechat-mirror"
@@ -157,7 +213,11 @@
    "date": "2026-09-12",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "美联储",
+    "加息",
+    "降息"
+   ],
    "md": "公众号文章/金渐成/突发变故-2026-09-12-美联储-加息-降息.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-12%5D%E7%AA%81%E5%8F%91%E5%8F%98%E6%95%85~.md",
    "source": "wechat-mirror"
@@ -167,8 +227,15 @@
    "title": "你未看见的事",
    "date": "2026-09-11",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks",
+    "hk-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "港股",
+    "仓位"
+   ],
    "md": "公众号文章/金渐成/你未看见的事-2026-09-11-美股-港股-仓位.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-11%5D%E4%BD%A0%E6%9C%AA%E7%9C%8B%E8%A7%81%E7%9A%84%E4%BA%8B~.md",
    "source": "wechat-mirror"
@@ -178,8 +245,14 @@
    "title": "尽早离去",
    "date": "2026-09-10",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "AI",
+    "标普"
+   ],
    "md": "公众号文章/金渐成/尽早离去-2026-09-10-美股-AI-标普.md",
    "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-10%5D%E5%B0%BD%E6%97%A9%E7%A6%BB%E5%8E%BB~.md",
    "source": "wechat-mirror"
@@ -190,7 +263,11 @@
    "date": "2026-09-08",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "AI",
+    "英伟达",
+    "台积电"
+   ],
    "md": "公众号文章/金渐成/一无所有-2026-09-08-AI-英伟达-台积电.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-09-08_1603_jinjiancheng_2247485281-1.txt",
    "source": "wechat-mirror"
@@ -283,8 +360,15 @@
    "title": "最难的总算过去了",
    "date": "2026-08-29",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "parenting",
+    "real-estate"
+   ],
+   "keywords": [
+    "育儿",
+    "房地产",
+    "AI"
+   ],
    "md": "公众号文章/金渐成/最难的总算过去了-2026-08-29-育儿-房地产-AI.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-08-29_1009_jinjiancheng_2247485259-1.txt",
    "source": "wechat-mirror"
@@ -294,8 +378,14 @@
    "title": "人对了，事就对了",
    "date": "2026-08-28",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "crypto-bitcoin",
+    "workplace"
+   ],
+   "keywords": [
+    "加密货币",
+    "职场"
+   ],
    "md": "公众号文章/金渐成/人对了，事就对了-2026-08-28-加密货币-职场.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-08-28_1133_jinjiancheng_2247485256-1.txt",
    "source": "wechat-mirror"
@@ -375,7 +465,11 @@
    "date": "2026-08-22",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "纳指",
+    "标普",
+    "微软"
+   ],
    "md": "公众号文章/金渐成/一个善意的提醒-2026-08-22-纳指-标普-微软.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-08-22_1210_jinjiancheng_2247485237-1.txt",
    "source": "wechat-mirror"
@@ -1685,8 +1779,14 @@
    "title": "开始一个新阶段",
    "date": "2026-04-12",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "台积电",
+    "博通"
+   ],
    "md": "公众号文章/金渐成/开始一个新阶段-2026-04-12-美股-台积电-博通.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-04-12_0920_jinjiancheng_2247484974-1.txt",
    "source": "wechat-mirror"
@@ -1737,8 +1837,16 @@
    "title": "今天的更新中，有这么一段话：以目前的国内愈来愈严且终身追责的监管形势，有些人被一杆清袋的概率确实不小。",
    "date": "2026-04-10",
    "column": "生玑伯伯",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "gold",
+    "us-stocks",
+    "crypto-bitcoin"
+   ],
+   "keywords": [
+    "黄金",
+    "美股",
+    "加密货币"
+   ],
    "md": "公众号文章/生玑伯伯/今天的更新中，有这么一段话：以目前的国内愈来愈严且终身追责的监管形势，有些人被一杆清袋的概率确实不小。-2026-04-10-黄金-美股-加密货币.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-04-10_1653_shengjibobo_2247483652-1.txt",
    "source": "wechat-mirror"
@@ -1763,7 +1871,10 @@
    "date": "2026-04-09",
    "column": "生玑伯伯",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "银行",
+    "债券"
+   ],
    "md": "公众号文章/生玑伯伯/汇率现在是个敏感点。-2026-04-09-银行-债券.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2026/2026-04-09_2151_shengjibobo_2247483650-1.txt",
    "source": "wechat-mirror"
@@ -3058,8 +3169,14 @@
    "title": "这一波市场大跌，之前已经写过，重点会在11月1日以后，详情见:《一切自有答案~》。",
    "date": "2025-11-21",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "加息",
+    "降息"
+   ],
    "md": "公众号文章/金渐成/这一波市场大跌，之前已经写过，重点会在11月1日以后，详情见 《一切自有答案~》。-2025-11-21-美股-加息-降息.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2025/2025-11-21_2129_jinjiancheng_2247484776-1.txt",
    "source": "wechat-mirror"
@@ -3317,8 +3434,14 @@
    "title": "终于还是来了",
    "date": "2025-11-04",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "纳指",
+    "标普"
+   ],
    "md": "公众号文章/金渐成/终于还是来了-2025-11-04-美股-纳指-标普.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2025/2025-11-04_2201_jinjiancheng_2247484775-1.txt",
    "source": "wechat-mirror"
@@ -4566,8 +4689,15 @@
    "title": "一切尽在不言中",
    "date": "2025-06-20",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks",
+    "real-estate"
+   ],
+   "keywords": [
+    "美股",
+    "房地产",
+    "银行"
+   ],
    "md": "公众号文章/金渐成/一切尽在不言中-2025-06-20-美股-房地产-银行.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2025/2025-06-20_2210_jinjiancheng_2247484765-1.txt",
    "source": "wechat-mirror"
@@ -4762,7 +4892,11 @@
    "date": "2025-06-07",
    "column": "金渐成",
    "topics": [],
-   "keywords": [],
+   "keywords": [
+    "标普",
+    "纳指",
+    "微软"
+   ],
    "md": "公众号文章/金渐成/做一个测试-2025-06-07-标普-纳指-微软.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2025/2025-06-07_2146_jinjiancheng_2247484763-1.txt",
    "source": "wechat-mirror"
@@ -5403,8 +5537,13 @@
    "title": "不完美的回答（1）",
    "date": "2025-04-07",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "parenting"
+   ],
+   "keywords": [
+    "育儿",
+    "默沙东"
+   ],
    "md": "公众号文章/金渐成/不完美的回答（1）-2025-04-07-育儿-默沙东.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2025/2025-04-07_1629_jinjiancheng_2247484533-2.txt",
    "source": "wechat-mirror"
@@ -5455,8 +5594,14 @@
    "title": "开小灶",
    "date": "2025-04-04",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "英伟达",
+    "亚马逊"
+   ],
    "md": "公众号文章/金渐成/开小灶-2025-04-04-美股-英伟达-亚马逊.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2025/2025-04-04_2056_jinjiancheng_2247484755-1.txt",
    "source": "wechat-mirror"
@@ -7798,8 +7943,14 @@
    "title": "赚钱如流水",
    "date": "2024-10-17",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate"
+   ],
+   "keywords": [
+    "房地产",
+    "台积电",
+    "茅台"
+   ],
    "md": "公众号文章/金渐成/赚钱如流水-2024-10-17-房地产-台积电-茅台.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2024/2024-10-17_2052_jinjiancheng_2247484752-1.txt",
    "source": "wechat-mirror"
@@ -7978,8 +8129,14 @@
    "title": "无话可说",
    "date": "2024-10-07",
    "column": "金渐成",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "hk-stocks"
+   ],
+   "keywords": [
+    "港股",
+    "恒生",
+    "医药"
+   ],
    "md": "公众号文章/金渐成/无话可说-2024-10-07-港股-恒生-医药.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2024/2024-10-07_1302_jinjiancheng_2247484751-1.txt",
    "source": "wechat-mirror"
@@ -10353,8 +10510,14 @@
    "title": "钱多得花不完",
    "date": "2023-12-22",
    "column": "天机奇谈",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate"
+   ],
+   "keywords": [
+    "银行",
+    "房地产",
+    "白银"
+   ],
    "md": "公众号文章/天机奇谈/钱多得花不完-2023-12-22-银行-房地产-白银.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2023/2023-12-22_1546_tianji-qitan_2247491756-1.txt",
    "source": "wechat-mirror"
@@ -12776,8 +12939,14 @@
    "title": "碧桂园的困境",
    "date": "2023-03-03",
    "column": "天机奇谈",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate"
+   ],
+   "keywords": [
+    "房地产",
+    "银行",
+    "特斯拉"
+   ],
    "md": "公众号文章/天机奇谈/碧桂园的困境-2023-03-03-房地产-银行-特斯拉.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2023/2023-03-03_1302_tianji-qitan_2247490850-1.txt",
    "source": "wechat-mirror"
@@ -13719,8 +13888,15 @@
    "title": "“体制化”",
    "date": "2022-09-29",
    "column": "天机奇谈",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate",
+    "a-shares"
+   ],
+   "keywords": [
+    "房地产",
+    "A股",
+    "茅台"
+   ],
    "md": "公众号文章/天机奇谈/“体制化”-2022-09-29-房地产-A股-茅台.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2022/2022-09-29_2118_tianji-qitan_2247490764-1.txt",
    "source": "wechat-mirror"
@@ -13835,8 +14011,14 @@
    "title": "离谱",
    "date": "2022-08-25",
    "column": "天机奇谈",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "real-estate"
+   ],
+   "keywords": [
+    "银行",
+    "标普",
+    "房地产"
+   ],
    "md": "公众号文章/天机奇谈/离谱-2022-08-25-银行-标普-房地产.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2022/2022-08-25_2127_tianji-qitan_2247490756-1.txt",
    "source": "wechat-mirror"
@@ -14002,8 +14184,15 @@
    "title": "撞南墙",
    "date": "2022-07-27",
    "column": "天机奇谈",
-   "topics": [],
-   "keywords": [],
+   "topics": [
+    "us-stocks",
+    "real-estate"
+   ],
+   "keywords": [
+    "债券",
+    "美股",
+    "房地产"
+   ],
    "md": "公众号文章/天机奇谈/撞南墙-2022-07-27-债券-美股-房地产.md",
    "url": "https://raw.githubusercontent.com/YWW26/jinjiancheng-articles-public/main/2022/2022-07-27_2113_tianji-qitan_2247490746-1.txt",
    "source": "wechat-mirror"
@@ -16449,6 +16638,25 @@
    "hash": "9cae24e910728f9f",
    "url": "https://www.jinjiancheng.com/articles/tianjiqitan/2020-02-17",
    "source": "site"
+  },
+  {
+   "path": "md:公众号文章/金渐成/在人潮中~-2026-10-15-美股-AMD-博通.md",
+   "title": "在人潮中~",
+   "date": "2026-10-15",
+   "column": "jinjiancheng",
+   "columnName": "金渐成",
+   "md": "公众号文章/金渐成/在人潮中~-2026-10-15-美股-AMD-博通.md",
+   "topics": [
+    "us-stocks"
+   ],
+   "keywords": [
+    "美股",
+    "AMD",
+    "博通"
+   ],
+   "url": "https://mp.weixin.qq.com/s?__biz=MzYzOTU1NTUzNw%3D%3D&mid=2247485371&idx=1",
+   "source": "wechat-inbox",
+   "extra": true
   }
  ]
 }

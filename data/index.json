@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-10-18T03:30:02.231Z",
+ "generatedAt": "2026-10-18T03:47:21.087Z",
  "site": "https://www.jinjiancheng.com",
  "profile": "jinjiancheng",
  "columns": {
-  "金渐成": 472,
+  "金渐成": 473,
   "生玑伯伯": 17,
   "天机奇谈": 324
  },
@@ -19,6 +19,17 @@
   "职场": 21
  },
  "articles": [
+  {
+   "path": "md:公众号文章/金渐成/贵人不可贱用-2026-10-16-助农.md",
+   "title": "贵人不可贱用",
+   "date": "2026-10-16",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/贵人不可贱用-2026-10-16-助农.md",
+   "url": "https://mp.weixin.qq.com/s?src=11&timestamp=1792295156&ver=7033&signature=xjUsuivFPsfprClX*ibgJdDsCLg15-mNa5v7C6JmsWB6oBFQ4VfeP8dc-5zaNHE0yViyiG*CZTVk1nwuEDlby851hzlm-ABOMlGMSLQtuoju6Q3hyi0ThqnBU4W6ObUr&new=1",
+   "source": "wechat-sogou"
+  },
   {
    "path": "md:公众号文章/金渐成/不告而别-2026-09-29-AI-美股.md",
    "title": "不告而别",

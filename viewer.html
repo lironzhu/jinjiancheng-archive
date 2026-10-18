@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>金渐成 · Markdown 存档</title>
+<style>
+:root{--fg:#1f2328;--muted:#656d76;--bg:#fff;--code:#f6f8fa;--line:#d8dee4;--accent:#c2410c}
+@media(prefers-color-scheme:dark){:root{--fg:#e6edf3;--muted:#8b949e;--bg:#0d1117;--code:#161b22;--line:#30363d;--accent:#f0883e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.8 -apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:9;display:flex;gap:16px;align-items:center;flex-wrap:wrap;
+padding:10px 20px;border-bottom:1px solid var(--line);background:var(--bg)}
+header a{color:var(--accent);text-decoration:none;font-size:14px;white-space:nowrap}
+header .path{flex:1;min-width:120px;color:var(--muted);font-size:12px;text-align:right;word-break:break-all}
+main{max-width:820px;margin:0 auto;padding:32px 22px 96px}
+h1{font-size:27px;line-height:1.35;margin:.4em 0 .6em}
+h2{font-size:21px;margin:2em 0 .6em;padding-bottom:.25em;border-bottom:1px solid var(--line)}
+h3{font-size:18px;margin:1.6em 0 .5em}
+h4,h5,h6{font-size:16px;margin:1.4em 0 .4em}
+a{color:var(--accent)}
+img{max-width:100%;height:auto;border-radius:10px;margin:12px 0}
+hr{border:0;border-top:1px solid var(--line);margin:1.8em 0}
+blockquote{margin:1em 0;padding:.3em 1em;border-left:3px solid var(--line);color:var(--muted)}
+blockquote blockquote{margin:.6em 0}
+code{background:var(--code);padding:.15em .4em;border-radius:4px;font-size:.9em;
+font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+pre{background:var(--code);padding:14px;border-radius:10px;overflow:auto}
+pre code{background:none;padding:0}
+.meta{background:var(--code);border:1px solid var(--line);border-radius:10px;padding:10px 14px;
+font-size:13px;line-height:1.9;color:var(--muted);margin:0 0 24px}
+.meta b{color:var(--fg);font-weight:600}
+.meta a{word-break:break-all}
+.state{color:var(--muted);padding:40px 0}
+.err{color:#b91c1c}
+ul,ol{padding-left:1.5em}
+li{margin:.25em 0}
+</style>
+</head>
+<body>
+<header>
+  <a href="./index.html">← 归档首页</a>
+  <a href="./search.html">检索</a>
+  <a href="./site/">复刻站点</a>
+  <a id="raw" href="#">原始 .md</a>
+  <span class="path" id="path"></span>
+</header>
+<main id="main"><p class="state">载入中…</p></main>
+<script>
+(function () {
+  var main = document.getElementById('main');
+  var pathEl = document.getElementById('path');
+  var rawEl = document.getElementById('raw');
+
+  function normalize(p) {
+    var out = [];
+    p.split('/').forEach(function (seg) {
+      if (!seg || seg === '.') return;
+      if (seg === '..') { out.pop(); return; }
+      out.push(seg);
+    });
+    return out.join('/');
+  }
+  function rel(p) {
+    return './' + p.split('/').map(encodeURIComponent).join('/');
+  }
+  function dirOf(p) {
+    var i = p.lastIndexOf('/');
+    return i < 0 ? '' : p.slice(0, i);
+  }
+  // 返回相对发布根目录的路径；外部链接返回 null
+  function resolveFrom(base, url) {
+    var u = String(url).replace(/&amp;/g, '&').trim();
+    if (/^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(u) || u.slice(0, 2) === '//') return null;
+    if (u.charAt(0) === '#') return null;
+    if (u.charAt(0) === '/') return normalize(u.slice(1));
+    return normalize(base + '/' + u);
+  }
+  function viewerUrl(p) {
+    return './viewer.html?f=' + encodeURIComponent(p);
+  }
+  function esc(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+
+  function inline(src, base) {
+    var codes = [];
+    var t = esc(src);
+    t = t.replace(/`([^`]+)`/g, function (m, a) {
+      codes.push(a);
+      return '\u0000' + (codes.length - 1) + '\u0000';
+    });
+    t = t.replace(/!\[([^\]]*)\]\(([^)\s]+)(?:\s+&quot;[^&]*&quot;)?\)/g, function (m, alt, u) {
+      var r = resolveFrom(base, u);
+      if (r === null) return m;
+      return '<img src="' + rel(r) + '" alt="' + alt + '" loading="lazy">';
+    });
+    t = t.replace(/\[([^\]]+)\]\(([^)\s]+)(?:\s+&quot;[^&]*&quot;)?\)/g, function (m, txt, u) {
+      var r = resolveFrom(base, u);
+      if (r === null) return '<a href="' + u + '" target="_blank" rel="noopener">' + txt + '</a>';
+      var anchor = '';
+      var hash = r.indexOf('#');
+      if (hash >= 0) { anchor = r.slice(hash); r = r.slice(0, hash); }
+      if (/\.md$/i.test(r)) return '<a href="' + viewerUrl(r) + anchor + '">' + txt + '</a>';
+      return '<a href="' + rel(r) + anchor + '">' + txt + '</a>';
+    });
+    t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    t = t.replace(/(^|[^*\w])\*([^*\n]+)\*/g, '$1<em>$2</em>');
+    t = t.replace(/~~([^~\n]+)~~/g, '<del>$1</del>');
+    t = t.replace(/\u0000(\d+)\u0000/g, function (m, i) { return '<code>' + codes[+i] + '</code>'; });
+    return t;
+  }
+
+  var RE_HEAD = /^(#{1,6})\s+(.*)$/;
+  var RE_HR = /^\s*(?:-{3,}|\*{3,}|_{3,})\s*$/;
+  var RE_UL = /^\s*[-*+]\s+(.*)$/;
+  var RE_OL = /^\s*\d+[.)]\s+(.*)$/;
+  var RE_QUOTE = /^\s*>\s?(.*)$/;
+  var RE_FENCE = /^\s*(?:```|~~~)/;
+
+  function joinParagraph(parts) {
+    var s = '';
+    parts.forEach(function (line, i) {
+      if (i === 0) { s = line; return; }
+      var last = s.slice(-1);
+      s += /[\u3000-\u9fff\uff00-\uffef]/.test(last) ? '' : ' ';
+      s += line;
+    });
+    return s;
+  }
+
+  function renderBlocks(lines, base) {
+    var out = [];
+    var i = 0;
+    while (i < lines.length) {
+      var line = lines[i];
+      if (!line.trim()) { i++; continue; }
+
+      if (RE_FENCE.test(line)) {
+        var lang = line.replace(RE_FENCE, '').trim();
+        var buf = [];
+        i++;
+        while (i < lines.length && !RE_FENCE.test(lines[i])) { buf.push(lines[i]); i++; }
+        i++;
+        out.push('<pre><code' + (lang ? ' class="language-' + esc(lang) + '"' : '') + '>' +
+          esc(buf.join('\n')) + '</code></pre>');
+        continue;
+      }
+
+      var h = line.match(RE_HEAD);
+      if (h) {
+        var lv = h[1].length;
+        var txt = inline(h[2], base);
+        if (lv === 1) {
+          out.push('<h1>' + txt + '</h1>');
+        } else {
+          out.push('<h' + lv + '>' + txt + '</h' + lv + '>');
+        }
+        i++;
+        continue;
+      }
+
+      if (RE_HR.test(line)) { out.push('<hr>'); i++; continue; }
+
+      if (RE_QUOTE.test(line)) {
+        var q = [];
+        while (i < lines.length && RE_QUOTE.test(lines[i])) { q.push(lines[i].match(RE_QUOTE)[1]); i++; }
+        var inner = renderBlocks(q, base).replace(/^<p>|<\/p>$/g, '');
+        out.push('<blockquote>' + inner + '</blockquote>');
+        continue;
+      }
+
+      if (RE_UL.test(line) || RE_OL.test(line)) {
+        var ordered = RE_OL.test(line);
+        var re = ordered ? RE_OL : RE_UL;
+        var items = [];
+        while (i < lines.length && re.test(lines[i])) { items.push(lines[i].match(re)[1]); i++; }
+        out.push('<' + (ordered ? 'ol' : 'ul') + '>' +
+          items.map(function (t) { return '<li>' + inline(t, base) + '</li>'; }).join('') +
+          '</' + (ordered ? 'ol' : 'ul') + '>');
+        continue;
+      }
+
+      var para = [];
+      while (i < lines.length && lines[i].trim() &&
+        !RE_HEAD.test(lines[i]) && !RE_HR.test(lines[i]) && !RE_QUOTE.test(lines[i]) &&
+        !RE_UL.test(lines[i]) && !RE_OL.test(lines[i]) && !RE_FENCE.test(lines[i])) {
+        para.push(lines[i]);
+        i++;
+      }
+      out.push('<p>' + inline(joinParagraph(para), base) + '</p>');
+    }
+    return out.join('\n');
+  }
+
+  function frontmatter(lines) {
+    if (lines[0] !== '---') return { rows: [], rest: lines };
+    var j = 1;
+    while (j < lines.length && lines[j] !== '---') j++;
+    if (j >= lines.length) return { rows: [], rest: lines };
+    var rows = lines.slice(1, j).filter(function (l) { return /^[A-Za-z_][\w-]*:\s*\S/.test(l); })
+      .map(function (l) {
+        var k = l.indexOf(':');
+        var key = l.slice(0, k).trim();
+        var val = l.slice(k + 1).trim().replace(/^"|"$/g, '');
+        return '<b>' + esc(key) + '</b> ' + (key === 'source' || key === 'original_url'
+          ? '<a href="' + esc(val) + '" target="_blank" rel="noopener">' + esc(val) + '</a>'
+          : esc(val));
+      });
+    return { rows: rows, rest: lines.slice(j + 1) };
+  }
+
+  var params = new URLSearchParams(location.search);
+  var cur = normalize(params.get('f') || 'markdown/index.md');
+  var base = dirOf(cur);
+
+  document.title = cur.split('/').pop() + ' · 金渐成 存档';
+  pathEl.textContent = cur;
+  rawEl.href = rel(cur);
+
+  if (location.protocol === 'file:') {
+    main.innerHTML = '<p class="err">Markdown 阅读器需要通过 HTTP 访问（<code>file://</code> 下浏览器禁止读取本地文件）。' +
+      '请运行 <code>node tools/site-archiver/serve.mjs</code> 或直接打开 <a href="./site/">复刻站点</a>。</p>';
+    return;
+  }
+
+  fetch(rel(cur)).then(function (r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.text();
+  }).then(function (text) {
+    var lines = text.replace(/\r\n?/g, '\n').split('\n');
+    var fm = frontmatter(lines);
+    var body = renderBlocks(fm.rest, base);
+    main.innerHTML = (fm.rows.length ? '<div class="meta">' + fm.rows.join(' · ') + '</div>' : '') + body;
+  }).catch(function (e) {
+    main.innerHTML = '<p class="err">读取失败：' + esc(e.message) + '</p>' +
+      '<p><a href="' + rel(cur) + '">直接打开原始文件</a></p>';
+  });
+})();
+</script>
+</body>
+</html>

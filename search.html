@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>金渐成 · 归档检索</title>
+<style>
+:root{--fg:#1f2328;--muted:#656d76;--bg:#fff;--card:#f6f8fa;--line:#d8dee4;--accent:#c2410c}
+@media(prefers-color-scheme:dark){:root{--fg:#e6edf3;--muted:#8b949e;--bg:#0d1117;--card:#161b22;--line:#30363d;--accent:#f0883e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.7 -apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif}
+.bar{position:sticky;top:0;z-index:9;background:var(--bg);border-bottom:1px solid var(--line);padding:14px 20px}
+.bar .row{max-width:900px;margin:0 auto;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.bar a.home{color:var(--accent);text-decoration:none;font-size:14px;white-space:nowrap}
+input[type=search],select{font:inherit;color:inherit;background:var(--card);border:1px solid var(--line);
+border-radius:9px;padding:8px 12px;outline:none}
+input[type=search]{flex:1;min-width:200px}
+input[type=search]:focus,select:focus{border-color:var(--accent)}
+.count{max-width:900px;margin:14px auto 0;color:var(--muted);font-size:13px}
+ul.results{list-style:none;max-width:900px;margin:0 auto;padding:8px 20px 90px}
+li.item{padding:16px 0;border-bottom:1px solid var(--line)}
+li.item h3{margin:0 0 6px;font-size:16.5px;font-weight:600;line-height:1.5}
+li.item h3 a{color:var(--fg);text-decoration:none}
+li.item h3 a:hover{color:var(--accent)}
+.tags{font-size:12.5px;color:var(--muted);margin-bottom:6px}
+.tags em{font-style:normal;background:var(--card);border:1px solid var(--line);border-radius:999px;
+padding:1px 9px;margin-right:6px;display:inline-block}
+.excerpt{color:var(--muted);font-size:13.5px;margin:0 0 8px}
+.excerpt mark{background:#fde68a;color:#111;border-radius:3px;padding:0 2px}
+.links a{font-size:13px;color:var(--accent);text-decoration:none;margin-right:16px;white-space:nowrap}
+.state{max-width:900px;margin:40px auto;padding:0 20px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="bar">
+  <div class="row">
+    <a class="home" href="./index.html">← 归档首页</a>
+    <input id="q" type="search" placeholder="搜索标题 / 关键词 / 摘要…（共 782 篇）" autocomplete="off">
+    <select id="col"><option value="">全部栏目</option></select>
+    <select id="topic"><option value="">全部主题</option></select>
+    <select id="sort">
+      <option value="desc">最新在前</option>
+      <option value="asc">最早在前</option>
+    </select>
+  </div>
+</div>
+<div class="count" id="count"></div>
+<ul class="results" id="results"></ul>
+<div class="state" id="state">载入索引…</div>
+<script>
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var items = [], topicNames = {}, filtered = [];
+  var MAX = 300;
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
+  function viewerUrl(p) { return './viewer.html?f=' + encodeURIComponent(p); }
+
+  function render() {
+    var q = $('q').value.trim().toLowerCase();
+    var col = $('col').value, topic = $('topic').value, dir = $('sort').value;
+    var terms = q ? q.split(/\s+/) : [];
+
+    filtered = items.filter(function (it) {
+      if (col && it.c !== col) return false;
+      if (topic && (it.ts || []).indexOf(topic) < 0) return false;
+      if (!terms.length) return true;
+      var hay = (it.t + ' ' + (it.k || []).join(' ') + ' ' + it.c + ' ' + it.d + ' ' + (it.x || '') +
+        ' ' + (it.ts || []).map(function (s) { return topicNames[s] || s; }).join(' ')).toLowerCase();
+      return terms.every(function (t) { return hay.indexOf(t) >= 0; });
+    });
+
+    filtered.sort(function (a, b) {
+      return dir === 'asc' ? String(a.d).localeCompare(String(b.d))
+                           : String(b.d).localeCompare(String(a.d));
+    });
+
+    $('count').textContent = filtered.length + ' 篇匹配' +
+      (filtered.length > MAX ? '（仅显示前 ' + MAX + ' 篇）' : '') +
+      (q ? ' · 关键词「' + $('q').value.trim() + '」' : '');
+
+    var out = filtered.slice(0, MAX).map(function (it) {
+      var tags = '<em>' + esc(it.d) + '</em><em>' + esc(it.c) + '</em>' +
+        (it.ts || []).map(function (s) { return '<em>' + esc(topicNames[s] || s) + '</em>'; }).join('');
+      var ex = esc(it.x || '');
+      if (terms.length) terms.forEach(function (t) {
+        if (!t) return;
+        ex = ex.replace(new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi'), '<mark>$1</mark>');
+      });
+      return '<li class="item"><h3><a href="./site' + esc(it.p) + '/">' + esc(it.t) + '</a></h3>' +
+        '<div class="tags">' + tags + '</div>' +
+        (ex ? '<p class="excerpt">' + ex + '</p>' : '') +
+        '<div class="links">' +
+        '<a href="./site' + esc(it.p) + '/">复刻页</a>' +
+        '<a href="' + viewerUrl('markdown/' + it.m) + '">Markdown</a>' +
+        (it.u ? '<a href="' + esc(it.u) + '" target="_blank" rel="noopener">源站</a>' : '') +
+        '</div></li>';
+    });
+    $('results').innerHTML = out.join('');
+  }
+
+  fetch('./data/search-index.json').then(function (r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }).then(function (data) {
+    items = data.items || [];
+    topicNames = data.topicNames || {};
+    $('state').style.display = 'none';
+    var cols = {}, tops = {};
+    items.forEach(function (it) { cols[it.c] = 1; (it.ts || []).forEach(function (s) { tops[s] = 1; }); });
+    Object.keys(cols).sort().forEach(function (c) {
+      $('col').insertAdjacentHTML('beforeend', '<option value="' + esc(c) + '">' + esc(c) + '</option>');
+    });
+    Object.keys(tops).sort(function (a, b) {
+      return (topicNames[a] || a).localeCompare(topicNames[b] || b, 'zh');
+    }).forEach(function (s) {
+      $('topic').insertAdjacentHTML('beforeend', '<option value="' + esc(s) + '">' +
+        esc(topicNames[s] || s) + '</option>');
+    });
+    render();
+    $('q').focus();
+  }).catch(function (e) {
+    $('state').innerHTML = '<span style="color:#b91c1c">索引载入失败：' + esc(e.message) + '</span>';
+  });
+
+  ['q', 'col', 'topic', 'sort'].forEach(function (id) {
+    $(id).addEventListener('input', render);
+    $(id).addEventListener('change', render);
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-10-18T02:46:30.253Z",
+ "generatedAt": "2026-10-18T03:30:02.231Z",
  "site": "https://www.jinjiancheng.com",
  "profile": "jinjiancheng",
  "columns": {
-  "金渐成": 463,
+  "金渐成": 472,
   "生玑伯伯": 17,
-  "天机奇谈": 322
+  "天机奇谈": 324
  },
  "topics": {
   "美股": 460,
@@ -19,6 +19,127 @@
   "职场": 21
  },
  "articles": [
+  {
+   "path": "md:公众号文章/金渐成/不告而别-2026-09-29-AI-美股.md",
+   "title": "不告而别",
+   "date": "2026-09-29",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/不告而别-2026-09-29-AI-美股.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-29%5D%E4%B8%8D%E5%91%8A%E8%80%8C%E5%88%AB~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/抄底亏惨了…-2026-09-28-资产配置-美股.md",
+   "title": "抄底亏惨了…",
+   "date": "2026-09-28",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/抄底亏惨了…-2026-09-28-资产配置-美股.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-28%5D%E6%8A%84%E5%BA%95%E4%BA%8F%E6%83%A8%E4%BA%86%E2%80%A6.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/现金流崩了-2026-09-23-美股-纳指-标普.md",
+   "title": "现金流崩了",
+   "date": "2026-09-23",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/现金流崩了-2026-09-23-美股-纳指-标普.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-23%5D%E7%8E%B0%E9%87%91%E6%B5%81%E5%B4%A9%E4%BA%86~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/埋下一枚坐标-2026-09-21-房地产-美股.md",
+   "title": "埋下一枚坐标",
+   "date": "2026-09-21",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/埋下一枚坐标-2026-09-21-房地产-美股.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-21%5D%E5%9F%8B%E4%B8%8B%E4%B8%80%E6%9E%9A%E5%9D%90%E6%A0%87~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/天机奇谈/价格回到十年前-2026-09-18-银行.md",
+   "title": "价格回到十年前",
+   "date": "2026-09-18",
+   "column": "天机奇谈",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/天机奇谈/价格回到十年前-2026-09-18-银行.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E5%A4%A9%E6%9C%BA%E5%A5%87%E8%B0%88/%5B2026-09-18%5D%E4%BB%B7%E6%A0%BC%E5%9B%9E%E5%88%B0%E5%8D%81%E5%B9%B4%E5%89%8D~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/等下一个春天-2026-09-17-美联储-加息-降息.md",
+   "title": "等下一个春天",
+   "date": "2026-09-17",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/等下一个春天-2026-09-17-美联储-加息-降息.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-17%5D%E7%AD%89%E4%B8%8B%E4%B8%80%E4%B8%AA%E6%98%A5%E5%A4%A9~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/不期而遇-2026-09-16-美股-AI-谷歌.md",
+   "title": "不期而遇",
+   "date": "2026-09-16",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/不期而遇-2026-09-16-美股-AI-谷歌.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-16%5D%E4%B8%8D%E6%9C%9F%E8%80%8C%E9%81%87~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/天机奇谈/永远给自己留一手牌-2026-09-14-房地产-银行-资产配置.md",
+   "title": "永远给自己留一手牌",
+   "date": "2026-09-14",
+   "column": "天机奇谈",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/天机奇谈/永远给自己留一手牌-2026-09-14-房地产-银行-资产配置.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E5%A4%A9%E6%9C%BA%E5%A5%87%E8%B0%88/%5B2026-09-14%5D%E6%B0%B8%E8%BF%9C%E7%BB%99%E8%87%AA%E5%B7%B1%E7%95%99%E4%B8%80%E6%89%8B%E7%89%8C~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/突发变故-2026-09-12-美联储-加息-降息.md",
+   "title": "突发变故",
+   "date": "2026-09-12",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/突发变故-2026-09-12-美联储-加息-降息.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-12%5D%E7%AA%81%E5%8F%91%E5%8F%98%E6%95%85~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/你未看见的事-2026-09-11-美股-港股-仓位.md",
+   "title": "你未看见的事",
+   "date": "2026-09-11",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/你未看见的事-2026-09-11-美股-港股-仓位.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-11%5D%E4%BD%A0%E6%9C%AA%E7%9C%8B%E8%A7%81%E7%9A%84%E4%BA%8B~.md",
+   "source": "wechat-mirror"
+  },
+  {
+   "path": "md:公众号文章/金渐成/尽早离去-2026-09-10-美股-AI-标普.md",
+   "title": "尽早离去",
+   "date": "2026-09-10",
+   "column": "金渐成",
+   "topics": [],
+   "keywords": [],
+   "md": "公众号文章/金渐成/尽早离去-2026-09-10-美股-AI-标普.md",
+   "url": "https://raw.githubusercontent.com/prompty/jjc-articles/HEAD/md/%E5%A4%A9%E7%8E%91%E5%85%A8%E9%9B%86/%E9%87%91%E6%B8%90%E6%88%90/%5B2026-09-10%5D%E5%B0%BD%E6%97%A9%E7%A6%BB%E5%8E%BB~.md",
+   "source": "wechat-mirror"
+  },
   {
    "path": "md:公众号文章/金渐成/一无所有-2026-09-08-AI-英伟达-台积电.md",
    "title": "一无所有",
